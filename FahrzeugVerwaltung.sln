@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugVerwaltung", "FahrzeugVerwaltung\FahrzeugVerwaltung.csproj", "{89EE9B04-EDD1-4500-9B9D-6E351CE0BF26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugVerwaltung.Service", "FahrzeugVerwaltung.Service\FahrzeugVerwaltung.Service.csproj", "{B9A3835C-4C33-4FDD-9375-587601F56C97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89EE9B04-EDD1-4500-9B9D-6E351CE0BF26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89EE9B04-EDD1-4500-9B9D-6E351CE0BF26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89EE9B04-EDD1-4500-9B9D-6E351CE0BF26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89EE9B04-EDD1-4500-9B9D-6E351CE0BF26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A3835C-4C33-4FDD-9375-587601F56C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A3835C-4C33-4FDD-9375-587601F56C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A3835C-4C33-4FDD-9375-587601F56C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A3835C-4C33-4FDD-9375-587601F56C97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FCB23911-E913-4C6A-9AE9-D9623F23D995}
+	EndGlobalSection
+EndGlobal
