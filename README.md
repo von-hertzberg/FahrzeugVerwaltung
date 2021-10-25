@@ -3,7 +3,7 @@
 ## Aufgaben
 
 ### Aufgabe 1) 
-Die erste Aufgabe soll sich mit der Installierung der Entwicklungsumgebung beschäftigen.
+Die erste Aufgabe soll sich mit der Installierung der Entwicklungsumgebung beschÃ¤ftigen.
 
  - Schritt 1: Visual Studio 2019 installieren.
  - Schritt 2: Eine Konsolenanwendung mit dem Namen **FahrzeugVerwaltung** in .NET 5 erstellen.
@@ -15,15 +15,15 @@ Die erste Aufgabe soll sich mit der Installierung der Entwicklungsumgebung besch
 |--|--|
 |Ident| int |
 |Brand| string |
-|Modell| string |
+|Model| string |
 
-Nun soll der Anwender die Möglichkeit habe, die Eigenschaften über die Konsole einzugeben
-Das Menü soll wie folgt aussehen:
+Nun soll der Anwender die MÃ¶glichkeit habe, die Eigenschaften Ã¼ber die Konsole einzugeben
+Das MenÃ¼ soll wie folgt aussehen:
 
     Hallo herzlich willkommen!
-    Bitten wählen Sie die Aktion aus
+    Bitten wÃ¤hlen Sie die Aktion aus
     1) Vehicle anlegen
-    2) Vehicle löschen 
+    2) Vehicle lÃ¶schen 
     3) Alle Vehicle anzeigen
     10) Programm beenden
     >1
@@ -35,23 +35,23 @@ Das Menü soll wie folgt aussehen:
     >Caddy
     Fahrzeug wurde angelegt
     
-    Bitten wählen Sie die Aktion aus
+    Bitten wÃ¤hlen Sie die Aktion aus
     1) Vehicle anlegen
-    2) Vehicle löschen 
+    2) Vehicle lÃ¶schen 
     3) Alle Vehicle anzeigen
     10) Programm beenden
     >3 
     Ident: 1, Marke: VW, Modell:Caddy
     
-Nun soll der User die Eigenschaft **Ident** nicht mehr selber setzen können, sondern sie soll vom System automatisch gesetzt werden. 
-**Wichtig:** Jede Ident sollte nur einmal gesetzt werden dürfen => keine Duplikate
+Nun soll der User die Eigenschaft **Ident** nicht mehr selber setzen kÃ¶nnen, sondern sie soll vom System automatisch gesetzt werden. 
+**Wichtig:** Jede Ident sollte nur einmal gesetzt werden dÃ¼rfen => keine Duplikate
 ### Aufgabe 3) Bearbeiten eines Vehicles
-Es soll nun dem Nutzer ermöglich werden bestimmte Vehicle zu bearbeiten 
-Bitten wählen Sie die Aktion 
+Es soll nun dem Nutzer ermÃ¶glich werden bestimmte Vehicle zu bearbeiten 
+Bitten wÃ¤hlen Sie die Aktion 
 
-    Bitten wählen Sie die Aktion aus
+    Bitten wÃ¤hlen Sie die Aktion aus
     1) Vehicle anlegen
-    2) Vehicle löschen
+    2) Vehicle lÃ¶schen
     3) Alle Vehicle anzeigen 
     4) Vehicle bearbeiten
     10) Programm beenden
@@ -65,7 +65,7 @@ Bitten wählen Sie die Aktion
     Fahrzeug mit dem Ident 1 wurde bearbeitet
 
 ### Aufgabe 4) Exceptionhandling
-Sollten falsche Eingaben getätigt werden, darf das Programm nicht abstürzen.
+Sollten falsche Eingaben getÃ¤tigt werden, darf das Programm nicht abstÃ¼rzen.
 Der User soll darauf
 
 ### Aufgabe 5) Erstellung  des VehicleService
@@ -74,12 +74,12 @@ Erstellen sie die Klasse **VehicleConsoleService** in dem Projekt **FahrzeugVerw
 Der **VehicleConsoleService** soll nun 4 Methoden bekommen
 	
 
- - `public void Save(){...}` //Soll ein Vehicle hinzufügen können
- - `public void Delete(){...}` // Soll ein Vehicle löschen können
- - `public void Update(){...}`//Soll ein Vehicle editieren können
+ - `public void Save(){...}` //Soll ein Vehicle hinzufÃ¼gen kÃ¶nnen
+ - `public void Delete(){...}` // Soll ein Vehicle lÃ¶schen kÃ¶nnen
+ - `public void Update(){...}`//Soll ein Vehicle editieren kÃ¶nnen
  - `public void GetAll(){}` //Soll alle Vehicle anzeigen
 Nun soll die alte Logik auf diese 4 Methoden extrahiert werden
-Außerdem soll die Klasse eine private Feld (auch Field genannt) bekommen 
+AuÃŸerdem soll die Klasse eine private Feld (auch Field genannt) bekommen 
 
 |Name| Datentyp  |
 |--|--|
@@ -90,17 +90,17 @@ Außerdem soll die Klasse eine private Feld (auch Field genannt) bekommen
 Es soll nun 2 Spezialisierungen von einem Vehicle geben. 
 Erstelle die Klasse **PKW** und **LKW**. Beiden **erben** von Vehicle.
 Die Klasse LKW soll nun eine weitere Eigenschaft bekommen
-|Name|Datentyp  |Erklärung
+|Name|Datentyp  |ErklÃ¤rung
 |--|--|--|
-| Capacity | double  |Gibt die Frachtkapazität an
+| Capacity | double  |Gibt die FrachtkapazitÃ¤t an
 
 Nun soll der Anwender beim Erstellen eines Vehicles gefragt ob es 1) ein PKW oder 2) LKW ist
  
 
  
-    Bitten wählen Sie die Aktion aus
+    Bitten wÃ¤hlen Sie die Aktion aus
     1) Vehicle anlegen
-    2) Vehicle löschen
+    2) Vehicle lÃ¶schen
     3) Alle Vehicle anzeigen 
     4) Vehicle bearbeiten
     10) Programm beenden
@@ -109,7 +109,7 @@ Nun soll der Anwender beim Erstellen eines Vehicles gefragt ob es 1) ein PKW ode
     1)PKW
     2)LKW
     >2
-    Bitte geben Sie die Frachtkapazität in kg an
+    Bitte geben Sie die FrachtkapazitÃ¤t in kg an
     >4500
      Bitten Geben sie nun die Marke ein
     >MAN
