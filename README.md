@@ -31,7 +31,7 @@ Das Menü soll wie folgt aussehen:
     >1
     Bitten Geben sie nun die Marke ein
     >VW
-    Bitten Geben sie nun die Modell ein
+    Bitten Geben sie nun das Modell ein
     >Caddy
     Fahrzeug wurde angelegt
     
@@ -60,7 +60,7 @@ Bitten wählen Sie die Aktion
     >1
      Bitten Geben sie nun die Marke ein
     >BMW
-    Bitten Geben sie nun die Modell ein
+    Bitten Geben sie nun das Modell ein
     >3er
     Fahrzeug mit dem Ident 1 wurde bearbeitet
 
@@ -78,6 +78,8 @@ Der **VehicleConsoleService** soll nun 4 Methoden bekommen
  - `public void Delete(){...}` // Soll ein Vehicle löschen können
  - `public void Update(){...}`//Soll ein Vehicle editieren können
  - `public void GetAll(){}` //Soll alle Vehicle anzeigen
+
+
 Nun soll die alte Logik auf diese 4 Methoden extrahiert werden
 Außerdem soll die Klasse eine private Feld (auch Field genannt) bekommen 
 
@@ -111,7 +113,7 @@ Nun soll der Anwender beim Erstellen eines Vehicles gefragt ob es 1) ein PKW ode
     >2
     Bitte geben Sie die Frachtkapazität in kg an
     >4500
-     Bitten Geben sie nun die Marke ein
+     Bitten Geben sie nun das Marke ein
     >MAN
     Bitten Geben sie nun die Modell ein
     >Sattelzug
