@@ -115,7 +115,7 @@ Nun soll der Anwender beim Erstellen eines Vehicles gefragt ob es 1) ein PKW ode
     >4500
      Bitten Geben sie nun das Marke ein
     >MAN
-    Bitten Geben sie nun die Modell ein
+    Bitten Geben sie nun das Modell ein
     >Sattelzug
     Ein LKW wurde erstellt
     
