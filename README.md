@@ -58,7 +58,7 @@ Bitten wählen Sie die Aktion
     >4
     Geben Sie bitte nun den Ident ein
     >1
-     Bitten Geben sie nun die Marke ein
+    Bitten Geben sie nun die Marke ein
     >BMW
     Bitten Geben sie nun das Modell ein
     >3er
@@ -113,7 +113,7 @@ Nun soll der Anwender beim Erstellen eines Vehicles gefragt ob es 1) ein PKW ode
     >2
     Bitte geben Sie die Frachtkapazität in kg an
     >4500
-     Bitten Geben sie nun das Marke ein
+    Bitten Geben sie nun das Marke ein
     >MAN
     Bitten Geben sie nun das Modell ein
     >Sattelzug
