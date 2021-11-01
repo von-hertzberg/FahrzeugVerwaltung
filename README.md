@@ -120,3 +120,6 @@ Nun soll der Anwender beim Erstellen eines Vehicles gefragt ob es 1) ein PKW ode
     Ein LKW wurde erstellt
     
    
+### Aufgabe 7) Abstraktion
+In dieser Aufgabe soll der Anwender nicht mehr eine Instanz von der Klasse **Vehicle** erstellen können. Es soll entweder ein PKW oder ein LKW erstellt werden.
+(Keyword: abstract)
