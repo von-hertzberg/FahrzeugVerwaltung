@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugVerwaltung", "FahrzeugVerwaltung\FahrzeugVerwaltung.csproj", "{89EE9B04-EDD1-4500-9B9D-6E351CE0BF26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FahrzeugVerwaltung", "FahrzeugVerwaltung\FahrzeugVerwaltung.csproj", "{89EE9B04-EDD1-4500-9B9D-6E351CE0BF26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugVerwaltung.Service", "FahrzeugVerwaltung.Service\FahrzeugVerwaltung.Service.csproj", "{B9A3835C-4C33-4FDD-9375-587601F56C97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FahrzeugVerwaltung.Service", "FahrzeugVerwaltung.Service\FahrzeugVerwaltung.Service.csproj", "{B9A3835C-4C33-4FDD-9375-587601F56C97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fahrzeugverwaltung.UI", "Fahrzeugverwaltung.UI\Fahrzeugverwaltung.UI.csproj", "{A4298E46-E598-4880-B3BB-B6DD5E233ED4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B9A3835C-4C33-4FDD-9375-587601F56C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9A3835C-4C33-4FDD-9375-587601F56C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9A3835C-4C33-4FDD-9375-587601F56C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4298E46-E598-4880-B3BB-B6DD5E233ED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4298E46-E598-4880-B3BB-B6DD5E233ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4298E46-E598-4880-B3BB-B6DD5E233ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4298E46-E598-4880-B3BB-B6DD5E233ED4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
