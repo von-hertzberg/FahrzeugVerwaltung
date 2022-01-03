@@ -1,12 +1,12 @@
-# Roadmap zum C# Entwickler!
+# Übungsaufgaben für C#
 
 ## Aufgaben
 
 ### Aufgabe 1) 
 Die erste Aufgabe soll sich mit der Installierung der Entwicklungsumgebung beschäftigen.
 
- - Schritt 1: Visual Studio 2019 installieren.
- - Schritt 2: Eine Konsolenanwendung mit dem Namen **FahrzeugVerwaltung** in .NET 5 erstellen.
+ - Schritt 1: Visual Studio 2022 installieren.
+ - Schritt 2: Dieses Projekt in Visual Studio 2022 klonen.
  - Schritt 3: Gebe "Hello World" auf der Konsole aus.
 ### Aufgabe 2)
  Erstelle die Klasse **Vehicle**  mit folgenden Eigenschaften
