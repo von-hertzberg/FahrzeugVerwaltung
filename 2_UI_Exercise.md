@@ -16,4 +16,13 @@ Beispiel:
 
 ### Aufgabe 4) Anzeigen der Vehicle in einer Listbox
 Es sollen allen angelegten Vehicle unterhalb des Button **"speichern"** angezeigt werden, dazu soll das WPF Control **ListBox** genutzt werden. Die Quelle der Items soll eine **ObservableCollection** vom Typ Vehicle sein.
- 
+ Sobald ein Fahrzeug nun gespeichert wird, soll dieses in der Listbox angezeigt werden.
+### Aufgabe 5) Anzeigen der Eigenschaften des Vehicle in der Listbox (DataTemplating)
+Da in der vorigen Aufgabe nicht spezifiert wurde, was angezeigt wurde, soll nun das Vehicle wie folgt in der Listbox angezeigt werden
+[Type] [Brand] [Modell] Dabei soll der Type des Fahrzeug fett gedruckt sein
+
+### Aufgabe 6) Laden von Vehicles bei dem Start der Applikation (Dictionaries, Random)
+Da beim Start der Applikation, die Liste der Vehicle leer ist, sollen nun 3-5 Vehicle (jedesmal zufällig) angelegt werden. Dabei ist die "Brand" von dem "Type" abhängig und das "Model" wiederum von der "Brand" 
+
+
+
