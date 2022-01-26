@@ -1,7 +1,9 @@
 # Übungsaufgaben für C#
 
 In diesem Repository gibt es verschiedene Aufgaben. 
-Beginnend mit der ersten Aufgabe ein Konsoleprogramm zu erstellen 
+Beginnend mit der ersten Aufgabe ein Konsoleprogramm zu erstellen.
+
+Die Aufgabe 2 setzt sich mit der Erstellung einer grafischen Oberfläche für die Fahrzeugverwaltung auseinander.
 
 ## Aufgaben
 
