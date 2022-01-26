@@ -7,8 +7,8 @@ Die Aufgabe 2 setzt sich mit der Erstellung einer grafischen Oberfläche für di
 
 ## Aufgaben
 
-### Aufgabe 1 - Konsolenprogramm
-https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/1_Console_Exercise.md
+### Aufgabe 1
+[Konsoleprogramm](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/1_Console_Exercise.md)
 
-### Aufabe 2 - UI mit WPF
-https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/2_UI_Exercise.md
+### Aufabe 2
+[UI mit WPF](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/2_UI_Exercise.md)
