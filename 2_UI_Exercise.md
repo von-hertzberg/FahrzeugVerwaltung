@@ -24,5 +24,6 @@ Da in der vorigen Aufgabe nicht spezifiert wurde, was angezeigt wurde, soll nun 
 ### Aufgabe 6) Laden von Vehicles bei dem Start der Applikation (Dictionaries, Random)
 Da beim Start der Applikation, die Liste der Vehicle leer ist, sollen nun 3-5 Vehicle (jedesmal zufällig) angelegt werden. Dabei ist die "Brand" von dem "Type" abhängig und das "Model" wiederum von der "Brand" 
 
-
+### Aufgabe 7) Bearbeiten der vorhandenen Vehicle
+Dem Benutzer soll es ermöglicht werden vorhandene Vehicles zu bearbeiten. Dafür sollen die Daten des aktuellen Vehicles oben angezeigt werden
 
