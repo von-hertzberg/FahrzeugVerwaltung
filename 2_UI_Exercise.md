@@ -37,15 +37,14 @@ Dieses Contextmenu soll bei einem Rechtsklick in der Listbox erscheinen.
 Dabei sollen alle Punkte beim Anklicken eine Messagebox mit ausgeben.
 
 ### Aufgabe 9) Löschen von Fahrzeugen
-Der Menüpunkt "löschen" soll das ausgewählte Fahrzeug aus der Listbox entfernen
+Der Menüpunkt **"löschen"** soll das ausgewählte Fahrzeug aus der Listbox entfernen.
 
 ### Aufgabe 10) Fenster zum Erstellen/Bearbeiten eines Vehicles
 Es soll jetzt ein weiteres Fenster erstellt werden. Dieses Fenster soll das Anlegen und Bearbeiten der Vehicle übernehmen. 
-Dabei sollen alle Eigenschaften eingebar sein.
+Dabei sollen alle Eigenschaften eingebbar sein.
 
 ### Aufgabe 11) Menüpunkt "Neu" mit dem Fenster verknüpfen 
 Sobald der Menupunkt "Neu" gerdrückt wird, soll das Fenster VehicleWindow erscheinen. Sobald ein Vehicle in dem neuen Fenster angelegt wird, soll sich dieses Fenster schließen.
 Das neue Vehicle soll in der Listbox angezeigt werden. 
 
-### Aufgabe 12)
 
