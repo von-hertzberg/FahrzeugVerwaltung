@@ -21,3 +21,9 @@ Die Namen der Klassen sollen wie die Interface heißen. Dabei soll das I vorne w
 ### Aufgabe 4) Implementierungen der Methoden für den VehicleService
 Sollten alle Aufgabe bis hierhin richtig sein, sollte nun eine Klasse namens Vehicleservice vorhanden sein, die die Methodes aus Aufgabe 1 hat.
 Da diese Methode von dem Repository ausgeführt werden soll im VehicleService einfach eine Instanz des VehicleRepository erstellt werden. 
+
+### Aufgabe 5) Implementierungen der Methoden für das VehicleRepository
+Die Methoden im **VehicleRepository** müssen in dieser Aufgabe implementiert werden. Dabei soll die Datenquelle eine JSon Datein sein. Beim der Save Methode soll ein Vehicle der Json Datei hinzugefügt werden. 
+Die JSon Datei hat dabei eine Liste von Vehicles
+
+### Aufgabe 6) 
