@@ -16,3 +16,8 @@ Die Aufgabe 2 setzt sich mit der Erstellung einer grafischen Oberfläche für di
 ### Aufgabe 3
 
 [Design Patterns - Service/Repository Pattern](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/3_Design_Patterns_Exercise.md)
+
+
+### Aufgabe 4
+
+[LINQ - Language Integrated Query](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/4_Linq_Exercise.md)
