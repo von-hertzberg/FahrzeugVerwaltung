@@ -14,10 +14,11 @@ Die Aufgabe 2 setzt sich mit der Erstellung einer grafischen Oberfläche für di
 [UI mit WPF](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/2_UI_Exercise.md)
 
 ### Aufgabe 3
-
-[Design Patterns - Service/Repository Pattern](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/3_Design_Patterns_Exercise.md)
-
+[Design Patterns I - Service/Repository Pattern](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/3_Design_Patterns_Exercise.md)
 
 ### Aufgabe 4
-
 [LINQ - Language Integrated Query](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/4_Linq_Exercise.md)
+
+### Aufgabe 5 
+
+[Design Patterns II - Dependency Injection](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/5_Dependency_Injection_Exercise.md)
