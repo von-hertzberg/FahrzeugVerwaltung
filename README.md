@@ -22,3 +22,7 @@ Die Aufgabe 2 setzt sich mit der Erstellung einer grafischen Oberfläche für di
 ### Aufgabe 5 
 
 [Design Patterns II - Dependency Injection](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/5_Dependency_Injection_Exercise.md)
+
+### Aufgabe 6
+
+[Client Server  - WebAPI](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/6_Web_API_Exercise.md)
