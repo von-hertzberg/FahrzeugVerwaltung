@@ -24,7 +24,7 @@ namespace FahrzeugVerwaltung.Server.Controllers
         [HttpGet]
         public IEnumerable<Vehicle> Get()
         {
-            return Enumerable.Empty<object>();
+            return Enumerable.Empty<Vehicle>();
         }
     }
 }
