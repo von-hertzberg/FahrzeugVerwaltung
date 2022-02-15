@@ -3,7 +3,7 @@ using System;
 using System.Windows;
 using System.Windows.Input;
 
-namespace Fahrzeugverwaltung.UI
+namespace FahrzeugVerwaltung.UI
 {
     public class VehicleViewModel
     {

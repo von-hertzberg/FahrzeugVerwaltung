@@ -7,11 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FahrzeugVerwaltung", "Fahrz
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FahrzeugVerwaltung.Service", "FahrzeugVerwaltung.Service\FahrzeugVerwaltung.Service.csproj", "{B9A3835C-4C33-4FDD-9375-587601F56C97}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fahrzeugverwaltung.UI", "Fahrzeugverwaltung.UI\Fahrzeugverwaltung.UI.csproj", "{A4298E46-E598-4880-B3BB-B6DD5E233ED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FahrzeugVerwaltung.UI", "Fahrzeugverwaltung.UI\FahrzeugVerwaltung.UI.csproj", "{A4298E46-E598-4880-B3BB-B6DD5E233ED4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugVerwaltung.Setup", "FahrzeugVerwaltung.Setup\FahrzeugVerwaltung.Setup.csproj", "{3647ECDB-4898-43B9-ABF8-0E056FAC4ADC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FahrzeugVerwaltung.Setup", "FahrzeugVerwaltung.Setup\FahrzeugVerwaltung.Setup.csproj", "{3647ECDB-4898-43B9-ABF8-0E056FAC4ADC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugVerwaltung.Data.DB", "FahrzeugVerwaltung.Data.DB\FahrzeugVerwaltung.Data.DB.csproj", "{E61B329C-EF1A-4078-B63B-4ED8F0E7E9BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FahrzeugVerwaltung.Data.DB", "FahrzeugVerwaltung.Data.DB\FahrzeugVerwaltung.Data.DB.csproj", "{E61B329C-EF1A-4078-B63B-4ED8F0E7E9BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugVerwaltung.Server", "FahrzeugVerwaltung.Server\FahrzeugVerwaltung.Server.csproj", "{D1ECCBCF-1C88-4D6B-8242-CE6F113FB9EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugVerwaltung.Shared", "FahrzeugVerwaltung.Shared\FahrzeugVerwaltung.Shared.csproj", "{0FF92FA3-D8C2-4AE1-ABA3-05C9A90166CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{E61B329C-EF1A-4078-B63B-4ED8F0E7E9BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E61B329C-EF1A-4078-B63B-4ED8F0E7E9BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E61B329C-EF1A-4078-B63B-4ED8F0E7E9BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1ECCBCF-1C88-4D6B-8242-CE6F113FB9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1ECCBCF-1C88-4D6B-8242-CE6F113FB9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1ECCBCF-1C88-4D6B-8242-CE6F113FB9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1ECCBCF-1C88-4D6B-8242-CE6F113FB9EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FF92FA3-D8C2-4AE1-ABA3-05C9A90166CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FF92FA3-D8C2-4AE1-ABA3-05C9A90166CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FF92FA3-D8C2-4AE1-ABA3-05C9A90166CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FF92FA3-D8C2-4AE1-ABA3-05C9A90166CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

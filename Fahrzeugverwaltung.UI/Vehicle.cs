@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Fahrzeugverwaltung.UI
+namespace FahrzeugVerwaltung.UI
 {
     public class Vehicle
     {
