@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FahrzeugVerwaltung.Setup", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FahrzeugVerwaltung.Data.DB", "FahrzeugVerwaltung.Data.DB\FahrzeugVerwaltung.Data.DB.csproj", "{E61B329C-EF1A-4078-B63B-4ED8F0E7E9BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugVerwaltung.Server", "FahrzeugVerwaltung.Server\FahrzeugVerwaltung.Server.csproj", "{D1ECCBCF-1C88-4D6B-8242-CE6F113FB9EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FahrzeugVerwaltung.Server", "FahrzeugVerwaltung.Server\FahrzeugVerwaltung.Server.csproj", "{D1ECCBCF-1C88-4D6B-8242-CE6F113FB9EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugVerwaltung.Shared", "FahrzeugVerwaltung.Shared\FahrzeugVerwaltung.Shared.csproj", "{0FF92FA3-D8C2-4AE1-ABA3-05C9A90166CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FahrzeugVerwaltung.Shared", "FahrzeugVerwaltung.Shared\FahrzeugVerwaltung.Shared.csproj", "{0FF92FA3-D8C2-4AE1-ABA3-05C9A90166CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FahrzeugVerwaltung.LINQ", "FahrzeugVerwaltung.LINQ\FahrzeugVerwaltung.LINQ.csproj", "{7560B310-43E4-4A5D-888C-548235CFFB4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{0FF92FA3-D8C2-4AE1-ABA3-05C9A90166CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FF92FA3-D8C2-4AE1-ABA3-05C9A90166CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FF92FA3-D8C2-4AE1-ABA3-05C9A90166CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7560B310-43E4-4A5D-888C-548235CFFB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7560B310-43E4-4A5D-888C-548235CFFB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7560B310-43E4-4A5D-888C-548235CFFB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7560B310-43E4-4A5D-888C-548235CFFB4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
