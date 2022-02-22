@@ -8,3 +8,7 @@ Erstelle einen VehicleController der alle Vehicle zurückgibt.
 
 ### Aufgabe 2) 
 Es soll ein Endpunkt erstellt werden, der anhand einer Id ein Vehicle zurückgibt. Dabei soll einfach ein leeres Vehicle mit der eingegebene Id ausgegeben werden.
+
+### Aufgabe 3) 
+Ein weiterer Endpunkt soll bereitgestellt werden. Dabei soll dieser Endpunkt ein **Vehicle** übergeben bekommen.
+
