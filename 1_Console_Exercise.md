@@ -16,7 +16,7 @@ Die erste Aufgabe soll sich mit der Installierung der Entwicklungsumgebung besch
 Nun soll der Anwender die Möglichkeit habe, die Eigenschaften über die Konsole einzugeben
 Das Menü soll wie folgt aussehen:
 
-    Hallo herzlich willkommen!
+    Hallo und herzlich willkommen!
     Bitten wählen Sie die Aktion aus
     1) Vehicle anlegen
     2) Vehicle löschen 
