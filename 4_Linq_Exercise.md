@@ -1,4 +1,4 @@
-## Aufgaben zur **L**anguage **IN**tegrated **Q**uery
+## Aufgaben zur **L** anguage **IN** tegrated **Q** uery
 
 ### Aufgabe 1) Where Linq Klausel
 In dem Projekt **FahrzeugVerwaltung.LINQ** ist eine Liste von Vehicle vorhanden. Entnehmen sie aus dieser Liste alle Fahrzeuge der Modellreihe **Audi**
