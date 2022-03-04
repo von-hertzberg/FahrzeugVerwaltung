@@ -6,3 +6,6 @@ Ein guter Artikel dazu ist [Dependency Injection mit dem Unity Container](https:
 ### Aufgabe 1) Unity Container Infos
 Erstelle in dem Projekt **FahrzeugVerwaltung.Setup** in der Klasse **Init** eine Methode **void Initialze()**.
 In dieser Methode soll ein Container initialisiert werden. Dieser Container soll dann später für das Mapping von den Interfaces zuständig sein.
+
+### Aufgabe 2) Registrieren der Interfaces
+Nun sollen die Interfaces mit den dazugehörigen Implementierungen im Container registriert werden. 
