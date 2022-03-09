@@ -47,4 +47,16 @@ Dabei sollen alle Eigenschaften eingebbar sein.
 Sobald der Menupunkt "Neu" gerdrückt wird, soll das Fenster VehicleWindow erscheinen. Sobald ein Vehicle in dem neuen Fenster angelegt wird, soll sich dieses Fenster schließen.
 Das neue Vehicle soll in der Listbox angezeigt werden. 
 
+### Aufgabe 12) Menüpunkt "Bearbeiten" mit dem Fenster verknüpfen 
+Sobald der Menupunkt "Bearbeiten" gerdrückt wird, soll das Fenster VehicleWindow erscheinen.Sobald ein Vehicle in dem neuen Fenster bearbeitet wurde, soll sich dieses Fenster schließen.
+Das geänderte Vehicle soll in der Listbox angezeigt werden. 
+
+### Aufgabe 13) Datenvalidierung per Validationrule
+Bei dem Erstellen/Bearbeiten Fenster sollen die eingegeben Daten validiert werden. Dies soll über **ValidationRules** geschehen.
+Dabei gilt:
+-Marke muss länger als drei Buchstaben sein und darf keine Zahlen enthalten
+-Modell muss länger als drei Buchstaben sein
+
+Aufgabe 14) Visibility 
+
 
