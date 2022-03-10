@@ -51,12 +51,18 @@ Das neue Vehicle soll in der Listbox angezeigt werden.
 Sobald der Menupunkt "Bearbeiten" gerdrückt wird, soll das Fenster VehicleWindow erscheinen.Sobald ein Vehicle in dem neuen Fenster bearbeitet wurde, soll sich dieses Fenster schließen.
 Das geänderte Vehicle soll in der Listbox angezeigt werden. 
 
-### Aufgabe 13) Datenvalidierung per Validationrule
+### Aufgabe 13) Datatemplating
+Die Darstellung der Vehicles in der Liste soll nun um eine Checkbox erweitert werden. In dieser soll nur ein Haken drin wenn das Fahrzeug vom Nutzer zur Zeit ausgewählt ist.
+
+### Aufgabe 14) Visibility 
+Die Menüpunkte Bearbeiten und Löschen sollen nur angezeigt werden, sofern ein Vehicle ausgewählt werden. Anderfalls sollen die Menüpunkte ausgegraut werden.  
+
+### Aufgabe 15) Datenvalidierung per Validationrule
 Bei dem Erstellen/Bearbeiten Fenster sollen die eingegeben Daten validiert werden. Dies soll über **ValidationRules** geschehen.
 Dabei gilt:
 -Marke muss länger als drei Buchstaben sein und darf keine Zahlen enthalten
 -Modell muss länger als drei Buchstaben sein
 
-Aufgabe 14) Visibility 
+
 
 
