@@ -63,6 +63,9 @@ Dabei gilt:
 -Marke muss länger als drei Buchstaben sein und darf keine Zahlen enthalten
 -Modell muss länger als drei Buchstaben sein
 
+### Aufgabe 16) Fahrzeuginformationen - Menüpunkt
+Ein weiterer Menüpunkt namens **Fahrzeuginformation** soll hinzugefügt werden. Dieser Menüpunkt soll dafür sorgen, dass Informationen für das jeweilige Fahrzeug hinterlegt werden können. 
 
-
+### Aufgabe 17) Fahrzeuginformationen - Fenster
+Sobald der Menüpunkt **Fahrzeuginformation** gedrückt wird, soll ein Fenster erscheinen. Dieses Fenster soll ein Eingabefeld beinhalten und ein Button mit dem Content **Speichern**.In dem Eingabefeld kann man Informationen in Textform hinterlegen. Sobald gespeichert wird soll sich das Fenster schließen.
 
