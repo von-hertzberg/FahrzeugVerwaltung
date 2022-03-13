@@ -5,6 +5,8 @@ Beginnend mit der ersten Aufgabe ein Konsoleprogramm zu erstellen.
 
 Die Aufgabe 2 setzt sich mit der Erstellung einer grafischen Oberfläche für die Fahrzeugverwaltung auseinander.
 
+Bei der Aufgabe 3 sollen sogenannte Design Patterns vermittelt werden. Dabei wird mit dem Service Repository Pattern angefangen 
+
 ## Aufgaben
 
 ### Aufgabe 1
