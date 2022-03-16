@@ -1,6 +1,6 @@
    ## Aufgaben zur Service und Repository
    ### Aufgabe 1) Erstellen des Basis Interfaces IRepository<TId, TModel>
-   Als aller ersten soll ein Interface in dem Projekt Fahrzeugverwaltung erstellt werden. Dieses Interface soll Methoden bereitstellen die CRUD Funktionalitäten darstellen.
+   Als aller Erstes soll ein Interface in dem Projekt Fahrzeugverwaltung erstellt werden. Dieses Interface soll Methoden bereitstellen die CRUD Funktionalitäten darstellen. (CRUD steht hier für Create Read Update Delete)
    Folgende Methoden sollen bereitgestellt werden.
    ```
    void Save(TModel entity);
