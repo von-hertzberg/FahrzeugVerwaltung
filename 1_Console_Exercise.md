@@ -119,3 +119,11 @@ Nun soll der Anwender beim Erstellen eines Vehicles gefragt ob es 1) ein PKW ode
 ### Aufgabe 7) Abstraktion
 In dieser Aufgabe soll der Anwender nicht mehr eine Instanz von der Klasse **Vehicle** erstellen können. Es soll entweder ein PKW oder ein LKW erstellt werden.
 (Keyword: abstract)
+
+### Aufgabe 8) Speichern der vehicle Liste
+Die Eingaben sollen nun in einer JSON Datei gespeichert werden, dafür soll die JsonConvert Klasse genutzt werden. 
+Die Datei soll unter C:/dev/vehicles.json gespeichert werden
+
+### Aufgabe 9) Laden der Liste 
+Bei dem Start des Programmes soll geprüft werden, ob unter C:/dev die Datei vehicles.json verfügbar ist. Wenn die Datei verfügbar ist sollen die Vehicles in der Konsole angezigt werden. Ansonsten soll eine leere Liste erstellt werden.  
+
