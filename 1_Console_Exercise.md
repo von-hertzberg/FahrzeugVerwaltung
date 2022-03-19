@@ -127,3 +127,6 @@ Die Datei soll unter C:/dev/vehicles.json gespeichert werden
 ### Aufgabe 9) Laden der Liste 
 Bei dem Start des Programmes soll geprüft werden, ob unter C:/dev die Datei vehicles.json verfügbar ist. Wenn die Datei verfügbar ist sollen die Vehicles in der Konsole angezigt werden. Ansonsten soll eine leere Liste erstellt werden.  
 
+### Aufgabe 10) Erstellen 
+
+
