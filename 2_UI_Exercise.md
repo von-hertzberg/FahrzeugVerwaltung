@@ -72,3 +72,8 @@ Sobald der Menüpunkt **Fahrzeuginformation** gedrückt wird, soll ein Fenster e
 ### Aufgabe 18) Styling
 In dieser Aufgabe soll das Vehicle um die Eigenschaft `In Reparatur` erweitert werden. Diese Eigenschaft drückt ob ein Fahrzeug gerade in der Reparatur ist.
 Dabei soll dies dem Nutzer in der Liste angezeigt werden, indem diese Fahrzeuge einen hellroten Hintergrund haben. Fahrzeuge die nicht `In Reparatur` sind sollen hellgrün angezeigt werden 
+
+### Aufgabe 19) Erstellen eines Loginfensters
+Damit nicht jeder das Programm nutzen kann, soll nun ein Loginfenster als erstes erscheinen. Dabei soll ein user seinen Namen und Passwort eingeben können. 
+
+
