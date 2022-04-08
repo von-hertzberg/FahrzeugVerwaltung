@@ -76,4 +76,6 @@ Dabei soll dies dem Nutzer in der Liste angezeigt werden, indem diese Fahrzeuge 
 ### Aufgabe 19) Erstellen eines Loginfensters
 Damit nicht jeder das Programm nutzen kann, soll nun ein Loginfenster als erstes erscheinen. Dabei soll ein user seinen Namen und Passwort eingeben können. 
 
-
+### Aufgabe 20) Speichern der Daten
+Das Loginfenster soll um eine Checkbox erweitert werden, die dem User ermöglicht, dass das Programm sich die Anmeldedaten merkt.
+Die Daten sollen in einem Json gepseichert werden.
