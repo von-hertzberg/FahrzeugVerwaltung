@@ -7,6 +7,8 @@ Die Aufgabe 2 setzt sich mit der Erstellung einer grafischen Oberfläche für di
 
 Bei der Aufgabe 3 sollen sogenannte Design Patterns vermittelt werden. Dabei wird mit dem Service Repository Pattern angefangen 
 
+Aufgabe dreht sich um LINQ
+
 ## Aufgaben
 
 ### Aufgabe 1
