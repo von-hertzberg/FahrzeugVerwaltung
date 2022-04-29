@@ -121,12 +121,18 @@ In dieser Aufgabe soll der Anwender nicht mehr eine Instanz von der Klasse **Veh
 (Keyword: abstract)
 
 ### Aufgabe 8) Speichern der vehicle Liste
+Erweitern des Menüs um *5) Speichern* 
 Die Eingaben sollen nun in einer JSON Datei gespeichert werden, dafür soll die JsonConvert Klasse genutzt werden. 
 Die Datei soll unter C:/dev/vehicles.json gespeichert werden
 
 ### Aufgabe 9) Laden der Liste 
 Bei dem Start des Programmes soll geprüft werden, ob unter C:/dev die Datei vehicles.json verfügbar ist. Wenn die Datei verfügbar ist sollen die Vehicles in der Konsole angezigt werden. Ansonsten soll eine leere Liste erstellt werden.  
 
-### Aufgabe 10) Erstellen 
+### Aufgabe 10) Speichern erweitern.
+
+Sobald der User speichert drcükt soll er der Namen der Datei angeben.
+
+### Aufgabe 11) Laden erweitern. 
+Das Programm soll beim start alle json Datein unter C:/dev auflisten. Der Nutzer soll über Zahleneingaben, die Liste auswählen die er bearbeiten kann.
 
 
