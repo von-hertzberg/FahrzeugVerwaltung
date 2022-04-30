@@ -76,6 +76,17 @@ Dabei soll dies dem Nutzer in der Liste angezeigt werden, indem diese Fahrzeuge 
 ### Aufgabe 19) Erstellen eines Loginfensters
 Damit nicht jeder das Programm nutzen kann, soll nun ein Loginfenster als erstes erscheinen. Dabei soll ein user seinen Namen und Passwort eingeben können. 
 
-### Aufgabe 20) Speichern der Daten
+### Aufgabe 20) Speichern der Anmeldedaten
 Das Loginfenster soll um eine Checkbox erweitert werden, die dem User ermöglicht, dass das Programm sich die Anmeldedaten merkt.
 Die Daten sollen in einem Json gepseichert werden.
+
+### Aufgabe 21) Programm schließen
+Es soll im Hauptfenster eine Button eingeführt werden, über den der User das Programm beeden kann
+
+### Aufgabe 22) Speichern der Liste aller Fahrzeuge
+Sobald das Programm über den Button aus Aufgabe 21) beendet wird, sollen alle Fahrzeuge aus der Liste gespeichert werden. Die Datei soll unter `C:/dev/Excersice02/vehicles.json` gespeichert werden. 
+
+### Aufgabe 23) Laden der Liste. 
+Bei Programmstart soll nun (falls vorhanden) die Fahrzeuge geladen werden. Sollten keine Datei vorhanden sein. Sollen die zufälligen Daten angezeigt werden.
+
+
