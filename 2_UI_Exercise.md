@@ -89,4 +89,5 @@ Sobald das Programm über den Button aus Aufgabe 21) beendet wird, sollen alle F
 ### Aufgabe 23) Laden der Liste. 
 Bei Programmstart soll nun (falls vorhanden) die Fahrzeuge geladen werden. Sollten keine Datei vorhanden sein. Sollen die zufälligen Daten angezeigt werden.
 
-
+### Aufgabe 24) Ändern der Listen
+Es soll dem User nun ermöglicht werden, die Datenquelle während des Programms zu wechseln.
