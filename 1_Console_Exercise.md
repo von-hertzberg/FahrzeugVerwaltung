@@ -135,4 +135,6 @@ Sobald der User speichert drcükt soll er der Namen der Datei angeben.
 ### Aufgabe 11) Laden erweitern. 
 Das Programm soll beim start alle json Datein unter C:/dev auflisten. Der Nutzer soll über Zahleneingaben, die Liste auswählen die er bearbeiten kann.
 
+### Aufgabe 12) Styling in der Console
+Jedes Mal wenn der Nutzer etwas eingibt soll nun eine Nachricht erscheinen die anzeigt ob die Aktion erfolgreich war oder eben nicht. Sollte die Aktion erfolgreich sein, soll die Nachricht in grün angezeigt werden. Sollte die Aktion nicht erfolgreich sein, soll die Nachricht in rot ausgegeben werden
 
