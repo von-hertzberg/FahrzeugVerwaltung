@@ -12,3 +12,5 @@ Es soll ein Endpunkt erstellt werden, der anhand einer Id ein Vehicle zurückgib
 ### Aufgabe 3) 
 Ein weiterer Endpunkt soll bereitgestellt werden. Dabei soll dieser Endpunkt ein **Vehicle** übergeben bekommen.
 
+### Aufgabe 4) 
+
