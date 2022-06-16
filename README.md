@@ -7,7 +7,7 @@ Die Aufgabe 2 setzt sich mit der Erstellung einer grafischen Oberfläche für di
 
 Bei der Aufgabe 3 sollen sogenannte Design Patterns vermittelt werden. Dabei wird mit dem Service Repository Pattern angefangen 
 
-Aufgabe dreht sich um LINQ
+Aufgabe 4 dreht sich um LINQ. Das sind sogenannte extension methods, die dem Entwickler helfen, Listen besser zu bearbeiten.
 
 ## Aufgaben
 
