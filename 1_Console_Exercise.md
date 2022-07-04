@@ -138,3 +138,8 @@ Das Programm soll beim start alle json Datein unter C:/dev auflisten. Der Nutzer
 ### Aufgabe 12) Styling in der Console
 Jedes Mal wenn der Nutzer etwas eingibt soll nun eine Nachricht erscheinen die anzeigt ob die Aktion erfolgreich war oder eben nicht. Sollte die Aktion erfolgreich sein, soll die Nachricht in grün angezeigt werden. Sollte die Aktion nicht erfolgreich sein, soll die Nachricht in rot ausgegeben werden
 
+### Aufgabe 13) Ladebildschirm
+Sobald ein neues Fahrzeug angelegt wird soll eine Ladeanimation kommen und sobald diese fertig ist, soll eine Meldung erscheinen, dass das Fahrzeug erfolgreich angelegt wird. Das Laden soll 5 Sekunden dauern.
+
+### Aufgabe 14) Checken für Duplikate
+Nun soll bei dem Ladebildschirm auch noch geprüft werden ob ein Fahrzeug mit den gleichen Werten (außer Ident) schon vorhanden ist. Sollte das der Fall sein, soll der Ladevorgang aufhören und eine Fehlermeldung soll ausgegeben werden.
