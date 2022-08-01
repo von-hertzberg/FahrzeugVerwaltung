@@ -30,3 +30,6 @@ Aufgabe 4 dreht sich um LINQ. Das sind sogenannte extension methods, die dem Ent
 ### Aufgabe 6
 
 [Client Server  - WebAPI](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/6_Web_API_Exercise.md)
+
+### Aufgabe Blazor
+[Blazor  - WebAPI](https://github.com/NexQueek/FahrzeugVerwaltung/blob/master/Blazor_Exercise.md)
