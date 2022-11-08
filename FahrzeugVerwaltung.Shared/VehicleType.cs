@@ -1,6 +1,8 @@
 ﻿namespace FahrzeugVerwaltung.Shared
 {
-    public class VehicleType
+    public enum VehicleType
     {
+        PKW,
+        LKW
     }
 }
