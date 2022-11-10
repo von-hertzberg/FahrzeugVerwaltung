@@ -6,6 +6,19 @@
         xmlns:local="clr-namespace:FahrzeugVerwaltung.UI"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="500">
+
+    <Window.Resources>
+        <DataTemplate x:Key="VehicleDataTemplate">
+            <TextBlock>
+                <Bold>
+                    <Run Text="{Binding Path=Type}"/>
+                </Bold>
+                <Run Text="{Binding Path=Brand}"/>
+                <Run Text="{Binding Path=Model}"/>
+            </TextBlock>
+        </DataTemplate>
+    </Window.Resources>
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -17,14 +30,31 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Label Content="Typ des Vehicles:" Grid.Row="0" Grid.Column="0"/>
-        <Label Content="Modell:" Grid.Row="1" Grid.Column="0"/>
+        <Label Content="Marke:" Grid.Row="1" Grid.Column="0"/>
+        <Label Content="Modell:" Grid.Row="2" Grid.Column="0"/>
         <TextBox Grid.Row="0" Text="{Binding Type}" Grid.Column="1"/>
-        <TextBox Grid.Row="1" Text="{Binding Model}" Grid.Column="1"/>
-        
+        <TextBox Grid.Row="1" Text="{Binding Brand}" Grid.Column="1"/>
+        <TextBox Grid.Row="2" Text="{Binding Model}" Grid.Column="1"/>
+
         <Button Content="speichern" Command="{Binding SaveCommand}" Grid.Column="1" Grid.Row="3"/>
+
+        <ListBox ItemsSource="{Binding VehicleList, Mode=OneWay}" ItemTemplate="{StaticResource VehicleDataTemplate}"
+                 Grid.Column="1" Grid.Row="4"
+                 SelectedIndex ="{Binding SelectedVehicleIndex}">
+
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Neu" Command="{Binding NewCommand}"/>
+                    <MenuItem Header="Bearbeiten" Command="{Binding EditCommand}"/>
+                    <MenuItem Header="Löschen" Command="{Binding DeleteCommand}"/>
+                </ContextMenu>
+            </ListBox.ContextMenu>
+
+        </ListBox>
 
     </Grid>
 </Window>

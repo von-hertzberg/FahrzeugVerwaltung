@@ -11,5 +11,10 @@ namespace FahrzeugVerwaltung.UI
         public string Type { get; set; }
         public string Model { get; set; }
         public string Brand { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format("Typ: {0}, Marke: {1}, Modell: {2}", Type, Brand, Model);
+        }
     }
 }
