@@ -8,15 +8,63 @@
         Title="MainWindow" Height="350" Width="500">
 
     <Window.Resources>
+        <CollectionViewSource Source="{Binding Vehicles}" x:Key="VehiclesListView"/>
+
         <DataTemplate x:Key="vehicleDetails">
-            <StackPanel>
-                <TextBlock Text="{Binding Type}"/>
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Type:"/>
+                    <Label Content="{Binding Type}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Brand:"/>
+                    <Label Content="{Binding Brand}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Model:"/>
+                    <Label Content="{Binding Model}"/>
+                </StackPanel>
+                <TextBlock Text="{Binding Info}" TextWrapping="Wrap" HorizontalAlignment="Center"/>
             </StackPanel>
         </DataTemplate>
 
         <DataTemplate x:Key="vehicleListItem">
-            <StackPanel>
-                <TextBlock Text="{Binding Type}"/>
+            <StackPanel Orientation="Horizontal">
+                <CheckBox IsHitTestVisible="False">
+                    <CheckBox.Style>
+                        <Style>
+                            <Setter Property="CheckBox.IsChecked" Value="False"/>
+
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path=IsSelected, RelativeSource={
+                        RelativeSource Mode=FindAncestor, AncestorType={x:Type ListBoxItem }}}"
+                                 Value="True">
+                                    <Setter Property="CheckBox.IsChecked" Value="True"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </CheckBox.Style>
+                </CheckBox>
+
+                <TextBlock>
+                    <TextBlock.Style>
+                        <Style>
+                            <Setter Property="TextBlock.Foreground" Value="LightGreen"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding InService}" Value="true">
+                                    <Setter Property="TextBlock.Foreground" Value="Red"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                        
+                    [
+                    <Run Text="{Binding Type}" FontWeight="Bold"/>
+                    <Run>] </Run>
+                    <Run Text="{Binding Model}"/>
+                    <Run> </Run>
+                    <Run Text="{Binding Brand}"/>
+                </TextBlock>
             </StackPanel>
         </DataTemplate>
     </Window.Resources>
@@ -34,10 +82,11 @@
         <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
             <Menu VerticalAlignment="Top" HorizontalAlignment="Left">
                 <MenuItem Header="File">
-                    <MenuItem Header="Open..."/>
-                    <MenuItem Header="Save as..."/>
+                    <MenuItem Header="Open..." Command="{Binding LoadCommand}"/>
+                    <MenuItem Header="Save" Command="{Binding SaveCommand}"/>
+                    <MenuItem Header="Save as..." Command="{Binding SaveAsCommand}"/>
                     <Separator/>
-                    <MenuItem Header="Exit"/>
+                    <MenuItem Header="Exit" Command="{Binding ExitCommand}"/>
                 </MenuItem>
             </Menu>
         </StackPanel>
@@ -45,19 +94,28 @@
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
                 <ColumnDefinition Width="Auto" MinWidth="200"/>
             </Grid.ColumnDefinitions>
 
-            <ListBox Grid.Column="0" Name="vehicleListBox" ItemsSource="{Binding Vehicles}" ItemTemplate="{StaticResource vehicleListItem}">
+            <ListBox Grid.Column="0" Name="vehicleListBox" ItemsSource="{Binding Source={StaticResource VehiclesListView}}"
+                     ItemTemplate="{StaticResource vehicleListItem}" Grid.ColumnSpan="3" SelectedIndex="{Binding SelectedIndex}">
+
+                <ListBox.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="New..." Command="{Binding NewVehicleCommand}"/>
+                        <MenuItem Header="Edit..." Command="{Binding EditVehicleCommand}" IsEnabled="{Binding IsVehicleSelected, UpdateSourceTrigger=PropertyChanged}"/>
+                        <MenuItem Header="Edit info..." Command="{Binding EditInfoCommand }" IsEnabled="{Binding IsVehicleSelected, UpdateSourceTrigger=PropertyChanged}"/>
+                        <MenuItem Header="Delete" Command="{Binding DeleteVehicleCommand}" IsEnabled="{Binding IsVehicleSelected, UpdateSourceTrigger=PropertyChanged}"/>
+                    </ContextMenu>
+                </ListBox.ContextMenu>
             </ListBox>
 
-            <DockPanel Grid.Column="1" Width="Auto">
-                
-                <StackPanel Orientation="Vertical" VerticalAlignment="Bottom">
-                    <Button Name="AddVehicleButton" Command="{Binding NewVehicleCommand}">Add</Button>
-                    <Button Name="EditVehicleButton" Command="{Binding EditVehicleCommand}">Edit</Button>
-                    <Button Name="RemoveVehicleButton" Command="{Binding DeleteVehicleCommand}">Delete</Button>
-                </StackPanel>
+            <DockPanel Grid.Column="3" Width="Auto">
+                <ContentControl VerticalAlignment="Top" HorizontalAlignment="Left"
+                                Content="{Binding Source={StaticResource VehiclesListView}}"
+                                ContentTemplate="{StaticResource vehicleDetails}" Margin="5,5,5,5"/>
             </DockPanel>
         </Grid>
     </Grid>

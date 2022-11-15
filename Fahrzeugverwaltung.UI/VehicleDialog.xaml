@@ -12,7 +12,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition/>
+            <RowDefinition/>    
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
@@ -25,19 +25,40 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <Label Grid.Row="0" Grid.Column="0" Content="Type"/>
             <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Type}"/>
 
             <Label Grid.Row="1" Grid.Column="0" Content="Brand"/>
-            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Brand}"/>
+            <TextBox Grid.Row="1" Grid.Column="1">
+                <TextBox.Text>
+                    <Binding Path="Brand">
+                        <Binding.ValidationRules>
+                            <local:LengthRule Min="3"/>
+                            <local:NoNumberRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
 
             <Label Grid.Row="2" Grid.Column="0" Content="Model"/>
-            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Model}"/>
+            <TextBox Grid.Row="2" Grid.Column="1">
+                <TextBox.Text>
+                    <Binding Path="Model">
+                        <Binding.ValidationRules>
+                            <local:LengthRule Min="3"/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+
+            <Label Grid.Row="3" Grid.Column="0" Content="In service"/>
+            <CheckBox Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding InService}"/>
         </Grid>
 
-        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Right">
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Right" Margin="5,5,5,5">
             <Button Content="Save" Click="SaveButton_Click" IsDefault="True"/>
             <Border BorderThickness="1" Width="10"/>
             <Button Content="Cancel"  Click="CancelButton_Click"/>
