@@ -54,8 +54,8 @@
                 </TextBox.Text>
             </TextBox>
 
-            <Label Grid.Row="3" Grid.Column="0" Content="In service"/>
-            <CheckBox Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding InService}"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Under repair"/>
+            <CheckBox Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" IsChecked="{Binding UnderRepair}"/>
         </Grid>
 
         <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Right" Margin="5,5,5,5">

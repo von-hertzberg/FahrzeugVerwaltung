@@ -10,15 +10,34 @@ using System.Windows.Input;
 
 namespace FahrzeugVerwaltung.UI
 {
+    /// <summary>
+    /// A view model to control the app.
+    /// </summary>
     public class VehicleViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
+        /// <summary>
+        /// Whether or not the vehicle list or a vehicle was changed.
+        /// </summary>
         private bool isDirty;
+        /// <summary>
+        /// The main window containing the app.
+        /// </summary>
         private Window mainWindow;
+        /// <summary>
+        /// The index of the selected vehicle or -1 if no vehicles is selected.
+        /// </summary>
         private int selectedIndex;
+        /// <summary>
+        /// The config used by the app.
+        /// </summary>
         private Config config;
 
+        /// <summary>
+        /// Construct a new VehicleViewModel.
+        /// </summary>
+        /// <param name="mainWindow">The main window of the app.</param>
         public VehicleViewModel(Window mainWindow)
         {
             this.mainWindow = mainWindow;
@@ -52,6 +71,11 @@ namespace FahrzeugVerwaltung.UI
             }
         }
 
+        /// <summary>
+        /// Load the user credential list from a 'users.json'.
+        /// </summary>
+        /// <returns>The loaded user credentials or an empty list when
+        /// the file could not be opened.</returns>
         private Dictionary<string, string> LoadUsers()
         {
             try
@@ -65,6 +89,10 @@ namespace FahrzeugVerwaltung.UI
             }
         }
 
+        /// <summary>
+        /// Display a login dialog and authenticate the user.
+        /// </summary>
+        /// <returns>True when login was successfull, otherwise false</returns>
         private bool PerformLogin()
         {
             var users = LoadUsers();
@@ -94,6 +122,9 @@ namespace FahrzeugVerwaltung.UI
             return true;
         }
 
+        /// <summary>
+        /// Initialize the commands exposed to xaml.
+        /// </summary>
         private void InitCommands()
         {
             NewVehicleCommand = new RelayCommand(New);
@@ -107,6 +138,9 @@ namespace FahrzeugVerwaltung.UI
             LoadCommand = new RelayCommand(Load);
         }
 
+        /// <summary>
+        /// Creates a new vehicle using <see cref="FahrzeugVerwaltung.UI.VehicleDialog"/>.
+        /// </summary>
         private void New()
         {
             var dialog = new VehicleDialog();
@@ -119,6 +153,9 @@ namespace FahrzeugVerwaltung.UI
             }
         }
 
+        /// <summary>
+        /// Edit the selected vehicle using <see cref="FahrzeugVerwaltung.UI.VehicleDialog"/>.
+        /// </summary>
         private void Edit()
         {
             if (SelectedIndex == -1)
@@ -135,6 +172,11 @@ namespace FahrzeugVerwaltung.UI
                 isDirty = true;
             }
         }
+
+        /// <summary>
+        /// Edit the info of the selected vehicle using
+        /// <see cref="FahrzeugVerwaltung.UI.VehicleInfoDialog"/>.
+        /// </summary>
         private void EditInfo()
         {
             if (SelectedIndex == -1)
@@ -152,6 +194,9 @@ namespace FahrzeugVerwaltung.UI
             }
         }
 
+        /// <summary>
+        /// Delete the selected vehicle.
+        /// </summary>
         private void Delete()
         {
             if (SelectedIndex == -1)
@@ -164,6 +209,9 @@ namespace FahrzeugVerwaltung.UI
             isDirty = true;
         }
 
+        /// <summary>
+        /// Log the user out and close the app.
+        /// </summary>
         private void Logout()
         {
             config.Username = "";
@@ -172,6 +220,14 @@ namespace FahrzeugVerwaltung.UI
             Exit();
         }
 
+        /// <summary>
+        /// Performs pre-exit tasks.
+        /// 
+        /// <list type="bullet">
+        ///     <item>Prompt the user to save unsaved changes.</item>
+        ///     <item>Save the config.</item>
+        /// </list>
+        /// </summary>
         private bool PrepareExit()
         {
             if (isDirty)
@@ -194,17 +250,26 @@ namespace FahrzeugVerwaltung.UI
             return true;
         }
 
+        /// <summary>
+        /// Event handler for closing the window.
+        /// </summary>
         private void OnExit(object sender, CancelEventArgs e)
         {
             e.Cancel = !PrepareExit();
         }
 
+        /// <summary>
+        /// Exit the app.
+        /// </summary>
         private void Exit()
         {
             if (PrepareExit())
                 mainWindow.Close();
         }
 
+        /// <summary>
+        /// Save the vehicle list.
+        /// </summary>
         private void Save()
         {
             if (config.VehicleListPath == "")
@@ -213,6 +278,10 @@ namespace FahrzeugVerwaltung.UI
                 Save(config.VehicleListPath);
         }
 
+        /// <summary>
+        /// Prompt the user for a location to save the vehicle list to
+        /// and Save the vehicle list.
+        /// </summary>
         private void SaveAs()
         {
             var dialog = new SaveFileDialog();
@@ -228,6 +297,10 @@ namespace FahrzeugVerwaltung.UI
             config.VehicleListPath = dialog.FileName;
         }
 
+        /// <summary>
+        /// Save the vehicle list to a given file.
+        /// </summary>
+        /// <param name="filePath">The path of the file to save to.</param>
         private void Save(string filePath)
         {
             using (var file = File.CreateText(filePath))
@@ -238,6 +311,9 @@ namespace FahrzeugVerwaltung.UI
             }
         }
 
+        /// <summary>
+        /// Prompt the user for a file to load the vehicle list from and load it.
+        /// </summary>
         private void Load()
         {
             var dialog = new OpenFileDialog();
@@ -250,6 +326,10 @@ namespace FahrzeugVerwaltung.UI
             Load(dialog.FileName);
         }
 
+        /// <summary>
+        /// Load the vehicle list from a given file.
+        /// </summary>
+        /// <param name="filePath">The path of the file to load from.</param>
         private void Load(string filePath)
         {
             if (isDirty)
@@ -276,17 +356,51 @@ namespace FahrzeugVerwaltung.UI
             config.VehicleListPath = filePath;
         }
 
+        /// <summary>
+        /// The list of vehicles that are manged by the app.
+        /// </summary>
         public ObservableCollection<Vehicle> Vehicles { get; set; }
-
+        /// <summary>
+        /// The command to create a new Vehicle.
+        /// </summary>
         public ICommand NewVehicleCommand { get; set; }
+        /// <summary>
+        /// The command to edit the selected vehicle.
+        /// </summary>
         public ICommand EditVehicleCommand { get; set; }
+        /// <summary>
+        /// The command to edit the info of the seleced vehicle.
+        /// </summary>
         public ICommand EditInfoCommand { get; set; }
+        /// <summary>
+        /// The command to delete the selected vehicle.
+        /// </summary>
         public ICommand DeleteVehicleCommand { get; set; }
+        /// <summary>
+        /// The command to log the user out and exit the app.
+        /// </summary>
         public ICommand LogoutCommand { get; set; }
+        /// <summary>
+        /// The command to exit the app.
+        /// </summary>
         public ICommand ExitCommand { get; set; }
+        /// <summary>
+        /// The command to save the vehicle list to disk.
+        /// </summary>
         public ICommand SaveCommand { get; set; }
+        /// <summary>
+        /// The command to prompt the user for a save location
+        /// and save the vehicle list.
+        /// </summary>
         public ICommand SaveAsCommand { get; set; }
+        /// <summary>
+        /// The command to prompt the user for a location to load
+        /// the vehicle lst from and load it.
+        /// </summary>
         public ICommand LoadCommand { get; set; }
+        /// <summary>
+        /// The index of the currently selected vehicle.
+        /// </summary>
         public int SelectedIndex
         {
             get => selectedIndex;
@@ -298,6 +412,9 @@ namespace FahrzeugVerwaltung.UI
                 selectedIndex = value;
             }
         }
+        /// <summary>
+        /// Whether or not a vehicle is selected.
+        /// </summary>
         public bool IsVehicleSelected { get; set; }
     }
 }

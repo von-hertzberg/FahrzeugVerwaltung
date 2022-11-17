@@ -3,8 +3,14 @@ using System.Windows.Controls;
 
 namespace FahrzeugVerwaltung.UI
 {
+    /// <summary>
+    /// A Validation rule used to only except strings that don't contain any numbers.
+    /// </summary>
     public class NoNumberRule : ValidationRule
     {
+        /// <summary>
+        /// Checks if the given string containts any numbers.
+        /// </summary>
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
             try

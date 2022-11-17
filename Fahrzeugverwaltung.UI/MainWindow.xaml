@@ -51,7 +51,7 @@
                         <Style>
                             <Setter Property="TextBlock.Foreground" Value="LightGreen"/>
                             <Style.Triggers>
-                                <DataTrigger Binding="{Binding InService}" Value="true">
+                                <DataTrigger Binding="{Binding UnderRepair}" Value="true">
                                     <Setter Property="TextBlock.Foreground" Value="Red"/>
                                 </DataTrigger>
                             </Style.Triggers>
