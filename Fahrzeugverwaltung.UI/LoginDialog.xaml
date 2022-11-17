@@ -28,10 +28,10 @@
             </Grid.RowDefinitions>
 
             <Label Grid.Row="0" Grid.Column="0" Content="Username"/>
-            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding UserName}"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}"/>
 
             <Label  Grid.Row="1" Grid.Column="0" Content="Password"/>
-            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Password}"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Password, UpdateSourceTrigger=PropertyChanged}"/>
         </Grid>
 
         <DockPanel Grid.Row="1">

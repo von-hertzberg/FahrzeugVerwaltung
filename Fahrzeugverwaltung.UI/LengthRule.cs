@@ -6,8 +6,6 @@ namespace FahrzeugVerwaltung.UI
 {
     public class LengthRule : ValidationRule
     {
-        public int Min { get; set; }
-
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
             int length = 0;
@@ -24,9 +22,11 @@ namespace FahrzeugVerwaltung.UI
             if (length < Min)
             {
                 return new ValidationResult(false,
-                  $"Please enter an string at least: {Min} long.");
+                  $"Please enter an string at least {Min} long.");
             }
             return ValidationResult.ValidResult;
         }
+
+        public int Min { get; set; }
     }
 }

@@ -5,11 +5,6 @@ namespace FahrzeugVerwaltung.UI
 {
     public partial class LoginDialog : Window
     {
-        public string UserName { get; set; }
-        public string Password { get; set; }
-
-        public bool SaveLogin { get; set; }
-
         private Dictionary<string, string> users;
 
         public LoginDialog(Dictionary<string, string> users)
@@ -41,5 +36,9 @@ namespace FahrzeugVerwaltung.UI
         {
             DialogResult = false;
         }
+
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public bool SaveLogin { get; set; }
     }
 }

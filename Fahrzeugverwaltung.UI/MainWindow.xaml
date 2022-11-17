@@ -86,6 +86,7 @@
                     <MenuItem Header="Save" Command="{Binding SaveCommand}"/>
                     <MenuItem Header="Save as..." Command="{Binding SaveAsCommand}"/>
                     <Separator/>
+                    <MenuItem Header="Logout" Command="{Binding LogoutCommand}"/>
                     <MenuItem Header="Exit" Command="{Binding ExitCommand}"/>
                 </MenuItem>
             </Menu>

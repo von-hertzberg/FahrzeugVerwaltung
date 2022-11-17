@@ -6,9 +6,11 @@ namespace FahrzeugVerwaltung.UI
 {
     internal class Config
     {
-        private static void WriteEmptyConfig(string filePath)
+        public Config()
         {
-            new Config().Save(filePath);
+            VehicleListPath = "";
+            Username = "";
+            Password = "";
         }
         public static Config Load(string filePath)
         {
@@ -39,11 +41,9 @@ namespace FahrzeugVerwaltung.UI
             }
         }
 
-        public Config()
+        private static void WriteEmptyConfig(string filePath)
         {
-            VehicleListPath = "";
-            Username = "";
-            Password = "";
+            new Config().Save(filePath);
         }
 
         [JsonPropertyName("vehiclesFilePath")]

@@ -1,4 +1,6 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
 
 namespace FahrzeugVerwaltung.UI
 {
@@ -7,8 +9,6 @@ namespace FahrzeugVerwaltung.UI
     /// </summary>
     public partial class VehicleInfoDialog : Window
     {
-        public string Info { get; set; }
-
         public VehicleInfoDialog()
         {
             InitializeComponent();
@@ -17,6 +17,8 @@ namespace FahrzeugVerwaltung.UI
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            BindingOperations.GetBindingExpression((TextBox)this.FindName("InfoInput"), TextBox.TextProperty).UpdateSource();
+
             DialogResult = true;
         }
 
@@ -24,5 +26,7 @@ namespace FahrzeugVerwaltung.UI
         {
             DialogResult = false;
         }
+
+        public string Info { get; set; }
     }
 }

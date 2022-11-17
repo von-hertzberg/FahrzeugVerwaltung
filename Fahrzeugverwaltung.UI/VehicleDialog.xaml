@@ -29,10 +29,10 @@
             </Grid.RowDefinitions>
 
             <Label Grid.Row="0" Grid.Column="0" Content="Type"/>
-            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Type}"/>
+            <TextBox Name="TypeInput" Grid.Row="0" Grid.Column="1" Text="{Binding Type}"/>
 
             <Label Grid.Row="1" Grid.Column="0" Content="Brand"/>
-            <TextBox Grid.Row="1" Grid.Column="1">
+            <TextBox Name="BrandInput" Grid.Row="1" Grid.Column="1">
                 <TextBox.Text>
                     <Binding Path="Brand">
                         <Binding.ValidationRules>
@@ -44,7 +44,7 @@
             </TextBox>
 
             <Label Grid.Row="2" Grid.Column="0" Content="Model"/>
-            <TextBox Grid.Row="2" Grid.Column="1">
+            <TextBox Name="ModelInput" Grid.Row="2" Grid.Column="1">
                 <TextBox.Text>
                     <Binding Path="Model">
                         <Binding.ValidationRules>

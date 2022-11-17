@@ -1,4 +1,7 @@
 ﻿using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Media.TextFormatting;
 
 namespace FahrzeugVerwaltung.UI
 {
@@ -7,8 +10,6 @@ namespace FahrzeugVerwaltung.UI
     /// </summary>
     public partial class VehicleDialog : Window
     {
-        public Vehicle Vehicle { get; set; }
-
         public VehicleDialog(Vehicle vehicle)
         {
             InitializeComponent();
@@ -22,12 +23,16 @@ namespace FahrzeugVerwaltung.UI
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
+            BindingOperations.GetBindingExpression((TextBox)this.FindName("TypeInput"), TextBox.TextProperty).UpdateSource();
+            BindingOperations.GetBindingExpression((TextBox)this.FindName("BrandInput"), TextBox.TextProperty).UpdateSource();
+            BindingOperations.GetBindingExpression((TextBox)this.FindName("ModelInput"), TextBox.TextProperty).UpdateSource();
+
             if (Vehicle.Type is null ||
                 Vehicle.Brand is null ||
                 Vehicle.Model is null ||
-                Vehicle.Type == string.Empty ||
-                Vehicle.Brand == string.Empty ||
-                Vehicle.Model == string.Empty)
+                Vehicle.Type.Length == 0 ||
+                Vehicle.Brand.Length == 0 ||
+                Vehicle.Model.Length == 0)
             {
                 MessageBox.Show("Input not complete");
             }
@@ -41,5 +46,7 @@ namespace FahrzeugVerwaltung.UI
         {
             DialogResult = false;
         }
+
+        public Vehicle Vehicle { get; set; }
     }
 }
